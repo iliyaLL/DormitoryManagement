@@ -10,4 +10,5 @@ public class AituDormitory {
     public String toString() {
         return "Floors: " + numberOfFloors;
     }
+
 }

@@ -9,9 +9,9 @@ public class Student extends Person{
     private int room;
     private int numberOfComplaints;
 
-    public Student(String firstName, String lastName, int age,
-                   int id, int floor, int flat, int room,
-                   int numberOfComplaints) {
+    public Student(String firstName, String lastName,
+                   int age, int id, int floor, int flat,
+                   int room, int numberOfComplaints) {
         super(firstName, lastName, age, id);
         this.floor = floor;
         this.flat = flat;
@@ -20,6 +20,10 @@ public class Student extends Person{
     }
 
     public void sendRequest() {
+
+    }
+
+    public void pay() {
 
     }
 }
