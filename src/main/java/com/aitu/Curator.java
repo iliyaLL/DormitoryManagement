@@ -1,15 +1,12 @@
 package com.aitu;
 
-public class Curator extends Person{
+public class Curator extends Employee{
 
-    private int salary;
-    private int bonus;
     private boolean fileComplaint = false;
 
-    public Curator(String firstName, String lastName, int age, int id, int salary, int bonus) {
-        super(firstName, lastName, age, id);
-        this.salary = salary;
-        this.bonus = bonus;
+    public Curator(String firstName, String lastName, int age, int id,
+                   double salary, double bonus) {
+        super(firstName, lastName, age, id, salary, bonus);
     }
 
 
