@@ -2,17 +2,18 @@ package com.aitu;
 
 public class Curator extends Employee{
 
-    private boolean fileComplaint = false;
-
-    public Curator(String firstName, String lastName, int age, int id,
+    public Curator(String firstName, String lastName, int age,
                    double salary, double bonus) {
-        super(firstName, lastName, age, id, salary, bonus);
+        super(firstName, lastName, age, salary, bonus);
     }
 
 
-    public void fileFileComplaint() {
-        //the method send a complaint to the administrator
-        //if a student has two complaints it gets kicked
+    public void fileComplaint(Student student, Administrator admin) {
+        admin.increaseComplaints(student);
     }
 
+    @Override
+    public void sayHello() {
+        System.out.println("Hello! I am a curator");
+    }
 }
