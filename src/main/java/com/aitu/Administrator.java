@@ -1,6 +1,8 @@
 package com.aitu;
 
-public class Administrator extends Employee implements IControl{
+import java.util.Scanner;
+
+public class Administrator extends Employee implements IControl {
 
     public Administrator(String firstName, String lastName, int age,
                          double salary, double bonus) {
@@ -17,16 +19,8 @@ public class Administrator extends Employee implements IControl{
 
     @Override
     public void addStudent(Student student, Dormitory block, int floor, int room) {
-        if(room > 126 || room < 1) {
-            throw new IllegalArgumentException("int room can from 1 to 126");
-        }
-        int roomLower = (floor - 1) * 18 + 1;
-        int roomUpper = floor * 18;
-        if(room < roomLower || room > roomUpper) {
-            throw new IllegalArgumentException("the floor doesn't match the room");
-        }
-
         block.addStudent(student, block, floor, room);
+        System.out.println(student.getFirstName() + " was added");
     }
 
     @Override
@@ -42,10 +36,5 @@ public class Administrator extends Employee implements IControl{
         } else {
             System.out.println(student);
         }
-    }
-
-    @Override
-    public void sayHello() {
-        System.out.println("Hello! I am an administrator");
     }
 }
