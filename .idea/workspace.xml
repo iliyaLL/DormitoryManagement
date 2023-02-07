@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d318e35f-810e-46b5-88db-b6fe7897c63d" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/UserExistsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Curator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Dormitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Dormitory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Student.java" afterDir="false" />
@@ -48,19 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aitu.Main" />
@@ -100,7 +98,16 @@
       <workItem from="1675053709011" duration="124000" />
       <workItem from="1675086663791" duration="330000" />
       <workItem from="1675088060737" duration="1716000" />
-      <workItem from="1675155313298" duration="9703000" />
+      <workItem from="1675155313298" duration="10110000" />
+      <workItem from="1675165865749" duration="417000" />
+      <workItem from="1675168276549" duration="2657000" />
+      <workItem from="1675178615322" duration="4429000" />
+      <workItem from="1675231754483" duration="784000" />
+      <workItem from="1675414884546" duration="3158000" />
+      <workItem from="1675668231552" duration="45000" />
+      <workItem from="1675668399119" duration="627000" />
+      <workItem from="1675676942589" duration="633000" />
+      <workItem from="1675771393464" duration="1509000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1674715508278</created>
@@ -137,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675014636295</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1675165195764</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675165195764</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

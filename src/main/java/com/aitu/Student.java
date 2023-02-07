@@ -9,32 +9,15 @@ public class Student extends Person{
     private int room;
     private int numberOfComplaints = 0;
     private int id;
-    private static ArrayList<Integer> id_gen = new ArrayList<>();
-    private static int i = 0;
+    private static int id_gen = 1;
+    private static ArrayList<Integer> ids = new ArrayList<>();
     private Scanner sc = new Scanner(System.in);
 
     public Student(String firstName, String lastName,
-                   int age, int id) throws UserExistsException {
+                   int age) throws UserExistsException {
         super(firstName, lastName, age);
 
-        try {
-            setId(id);
-        } catch (UserExistsException e) {
-            System.out.println(e.getMessage());
-
-            while(true) {
-                System.out.print("another id: ");
-                int newId = sc.nextInt();
-                if(!studentExists(newId)) {
-                    setId(newId);
-                    break;
-                }
-            }
-
-            System.out.println(id_gen);
-        } catch (Exception e) {
-            System.out.println("OK");
-        }
+        setId(id_gen);
     }
 
     public int getId() {
@@ -58,10 +41,14 @@ public class Student extends Person{
         if(studentExists(id)) {
             throw new UserExistsException(getFirstName() + getLastName() + " id already exists");
         } else {
-            id_gen.add(id);
-            i++;
+            ids.add(id);
             this.id = id;
+            id_gen++;
         }
+    }
+
+    public void removeId(){
+        ids.remove(Integer.valueOf(this.id));
     }
 
     public void setFloorRoom(int floor, int room) {
@@ -74,7 +61,7 @@ public class Student extends Person{
     }
 
     private boolean studentExists(int id) {
-        for(int i: id_gen) {
+        for(int i: ids) {
             if(i == id) {
                 return true;
             }
@@ -89,9 +76,9 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return getFirstName() + " " + getLastName() + ", floor "
+        return getFirstName() + " " + getLastName() +
+                " ID: " + getId() + ", floor " +
                 + getFloor() + ", room " + getRoom()
                 + ", complaints: " + numberOfComplaints;
     }
-
 }

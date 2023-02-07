@@ -91,6 +91,7 @@ public class Dormitory implements IControl{
     @Override
     public void removeStudent(Student student, Dormitory block) {
         studentRooms.remove(student);
+        student.removeId();
         NumberOfEmptyRooms++;
     }
 
