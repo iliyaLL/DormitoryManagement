@@ -5,7 +5,7 @@ package com.aitu;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Dormitory implements IControl{
+public class Dormitory implements Control {
 
     private final int numberOfFloors = 7;
     private final int roomsPerFloor = 18;

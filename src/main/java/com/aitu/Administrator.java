@@ -1,6 +1,6 @@
 package com.aitu;
 
-public class Administrator extends Employee implements IControl {
+public class Administrator extends Employee implements Control {
 
     public Administrator(String firstName, String lastName, int age,
                             double salary, double bonus) {

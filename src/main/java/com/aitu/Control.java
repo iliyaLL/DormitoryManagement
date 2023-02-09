@@ -1,6 +1,6 @@
 package com.aitu;
 
-public interface IControl {
+public interface Control {
 
     void addStudent(Student student, Dormitory block, int floor, int room);
 
