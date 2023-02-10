@@ -1,4 +1,4 @@
-package com.aitu;
+package com.aitu.entities;
 
 public abstract class Person {
 

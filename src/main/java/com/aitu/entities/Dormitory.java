@@ -1,6 +1,8 @@
 // The AITU Dormitory building plan.
 
-package com.aitu;
+package com.aitu.entities;
+
+import com.aitu.interfaces.Control;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,16 +12,11 @@ public class Dormitory implements Control {
     private final int numberOfFloors = 7;
     private final int roomsPerFloor = 18;
     private final int totalNumberOfRooms = 126;
-    private int NumberOfEmptyRooms = 126;
     private ArrayList<Student> studentRooms = new ArrayList<>();
     private Scanner sc = new Scanner(System.in);
 
     public int getNumberOfFloors() {
         return numberOfFloors;
-    }
-
-    public int getEmptyPlaces() {
-        return NumberOfEmptyRooms;
     }
 
     public int getTotalNumberOfPlaces() {
@@ -44,7 +41,7 @@ public class Dormitory implements Control {
     }
 
     //checks if the input is correct 1 floor 1-18 rooms, 2 floor 19-36 rooms ...
-    public boolean isCorrectRoom(int floor, int room) {
+    private boolean isCorrectRoom(int floor, int room) {
         if((floor < 1 || floor > 7) || (room < 1 || room > 126)) return false;
         int roomLower = (floor - 1) * 18 + 1;
         int roomUpper = floor * 18;
@@ -85,18 +82,11 @@ public class Dormitory implements Control {
         }
 
         studentRooms.add(student);
-        NumberOfEmptyRooms--;
     }
 
     @Override
     public void removeStudent(Student student, Dormitory block) {
         studentRooms.remove(student);
         student.removeId();
-        NumberOfEmptyRooms++;
-    }
-
-    @Override
-    public String toString() {
-        return "Empty places: " + NumberOfEmptyRooms;
     }
 }

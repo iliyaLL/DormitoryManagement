@@ -1,4 +1,7 @@
-package com.aitu;
+package com.aitu.interfaces;
+
+import com.aitu.entities.Dormitory;
+import com.aitu.entities.Student;
 
 public interface Control {
 

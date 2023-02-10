@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d318e35f-810e-46b5-88db-b6fe7897c63d" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/data/PostgresDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/data/interfaces/IDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Dormitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Dormitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/IControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/interfaces/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Dormitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Dormitory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/UserExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/exceptions/UserExistsException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +68,18 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.aitu" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aitu.Main" />
       <module name="Assignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.aitu.UserExistsException" />
+          <option name="PATTERN" value="com.aitu.exceptions.UserExistsException" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,6 +125,8 @@
       <workItem from="1675773543439" duration="25000" />
       <workItem from="1675842384889" duration="14000" />
       <workItem from="1675942339566" duration="33000" />
+      <workItem from="1675944045037" duration="1704000" />
+      <workItem from="1676041056384" duration="10711000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1674715508278</created>
@@ -159,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675772967005</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit">
+      <created>1675944134312</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675944134313</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

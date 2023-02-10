@@ -1,4 +1,4 @@
-package com.aitu;
+package com.aitu.exceptions;
 
 public class UserExistsException extends Exception{
 
