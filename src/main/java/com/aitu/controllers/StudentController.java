@@ -22,6 +22,12 @@ public class StudentController {
         return (added ? "Student was added!" : "Student adding was failed!");
     }
 
+//    public String removeStudent (int id) {
+//        Student student = repository.removeStudent(id);
+//
+//        return student == null ? "Student was removed" : student.toString();
+//    }
+
     public String getStudent (int id) {
         Student student = repository.getStudent(id);
 

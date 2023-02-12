@@ -19,7 +19,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         IDB db = new PostgresDB();
         IStudentRepository repo = new StudentRepository(db);
         StudentController controller = new StudentController(repo);

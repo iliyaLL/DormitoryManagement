@@ -18,14 +18,14 @@ public class Student extends Person {
     public Student(int id, String firstName, String lastName,
                    int age, int floor, int room) throws UserExistsException {
         super(firstName, lastName, age);
-
+        setFloorRoom(floor, room);
         setId(id_gen);
     }
 
     public Student(String firstName, String lastName,
                    int age, int floor, int room) throws UserExistsException {
         super(firstName, lastName, age);
-
+        setFloorRoom(floor, room);
         setId(id_gen);
     }
 
@@ -79,6 +79,6 @@ public class Student extends Person {
     public String toString() {
         return getFirstName() + " " + getLastName() +
                 " ID: " + getId() + ", floor " +
-                + getFloor() + ", room " + getRoom();
+                getFloor() + ", room " + getRoom();
     }
 }

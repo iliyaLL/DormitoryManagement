@@ -21,40 +21,44 @@ public class MyApplication {
     }
 
     public void start() {
-        System.out.print("""
-                
-                Welcome to the Dormitory Management Application!
-                Select the option:
-                1. Get students by blocks
-                2. Get the student by ID
-                3. Add a student
-                4. Remove the student
-                0. exit
-                
-                """);
+        while (true) {
+            System.out.print("""
+                                    
+                    Welcome to the Dormitory Management Application!
+                    Please select an option:
+                    1. Retrieve students by block
+                    2. Retrieve student by ID
+                    3. Add student
+                    4. Remove student
+                    0. Exit
+                                    
+                    """);
 
-        try {
-            System.out.print("Enter option (1-4): ");
-            int option = scanner.nextInt();
-            if (option == 1) {
-                getAllStudentsMenu();
-            } else if (option == 2) {
-                getStudentByIdMenu();
-            } else if (option == 3) {
-                addStudentMenu();
-            } else {
-                System.out.println("terminating...");
-                return;
+            try {
+                System.out.print("Enter option (1-4): ");
+                int option = scanner.nextInt();
+                if (option == 1) {
+                    getAllStudentsMenu();
+                } else if (option == 2) {
+                    getStudentByIdMenu();
+                } else if (option == 3) {
+                    addStudentMenu();
+                } else if (option == 4) {
+//                    removeStudentMenu();
+                } else {
+                    System.out.println("terminating...");
+                    return;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Input must be integer");
+                scanner.nextLine();
             }
-        } catch (InputMismatchException e) {
-            System.out.println("Input must be integer");
-            scanner.nextLine(); // to ignore incorrect input
-        }
-        catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+            catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
 
-        System.out.println("**************************************************");
+            System.out.println("**************************************************");
+        }
     }
 
 
@@ -86,4 +90,12 @@ public class MyApplication {
         String response = controller.addStudent(name, surname, age, floor, room);
         System.out.println(response);
     }
+
+//    public void removeStudentMenu() {
+//        System.out.println("Please enter id: ");
+//        int id = scanner.nextInt();
+//
+//        String response = controller.removeStudent(id);
+//        System.out.println(response);
+//    }
 }

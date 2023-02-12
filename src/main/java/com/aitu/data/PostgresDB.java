@@ -11,13 +11,7 @@ public class PostgresDB implements IDB {
         Connection connection = null;
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" +
-                    "dormitory", "postgres", "cppsenku");
-            if (connection != null) {
-                System.out.println("Connection established");
-            } else {
-                System.out.println("Connection Failed");
-            }
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dormitory", "postgres", "cppsenku");
         } catch (Exception e) {
             System.out.println(e);
         }

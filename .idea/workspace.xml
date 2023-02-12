@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d318e35f-810e-46b5-88db-b6fe7897c63d" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/data/PostgresDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/data/interfaces/IDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/interfaces/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Dormitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Dormitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Employee.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/UserExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/exceptions/UserExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/data/PostgresDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/data/PostgresDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

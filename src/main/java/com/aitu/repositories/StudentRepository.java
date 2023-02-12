@@ -88,11 +88,11 @@ public class StudentRepository implements IStudentRepository {
         Connection connection = null;
         try {
             connection = db.connect();
-            String sql = "SELECT id,name,surname,gender FROM users";
+            String sql = "SELECT id,first_name,last_name, age, floor, room FROM students";
             Statement st = connection.createStatement();
 
             ResultSet rs = st.executeQuery(sql);
-            ArrayList<Student> students = new ArrayList<Student>();
+            ArrayList<Student> students = new ArrayList<>();
             while (rs.next()) {
                 Student student = new Student(rs.getInt("id"),
                         rs.getString("first_name"),
