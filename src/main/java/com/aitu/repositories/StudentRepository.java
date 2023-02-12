@@ -47,18 +47,63 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public Student getStudent(int id) {
+    public Student removeStudent(int id) {
         Connection connection = null;
+        Statement statement;
         try {
             connection = db.connect();
-            String sql = "SELECT id,first_name, last_name,age,floor,room FROM students WHERE id=?";
+            String sql = "SELECT id_stud,first_name,last_name,age,floor,room FROM students WHERE id_stud=?";
             PreparedStatement st = connection.prepareStatement(sql);
 
             st.setInt(1, id);
 
             ResultSet rs = st.executeQuery();
             if (rs.next()) {
-                Student student = new Student(rs.getInt("id"),
+                Student student = new Student(rs.getInt("id_stud"),
+                        rs.getString("first_name"),
+                        rs.getString("last_name"),
+                        rs.getInt("age"),
+                        rs.getInt("floor"),
+                        rs.getInt("room"));
+
+                try {
+                    String query = String.format("DELETE FROM students WHERE id_stud = %d", id);
+                    statement = connection.createStatement();
+                    statement.executeUpdate(query);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+                return student;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (UserExistsException e) {
+            System.out.println(e);;
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public Student getStudent(int id) {
+        Connection connection = null;
+        try {
+            connection = db.connect();
+            String sql = "SELECT id_stud,first_name,last_name,age,floor,room FROM students WHERE id_stud=?";
+            PreparedStatement st = connection.prepareStatement(sql);
+
+            st.setInt(1, id);
+
+            ResultSet rs = st.executeQuery();
+            if (rs.next()) {
+                Student student = new Student(rs.getInt("id_stud"),
                         rs.getString("first_name"),
                         rs.getString("last_name"),
                         rs.getInt("age"),
@@ -88,13 +133,13 @@ public class StudentRepository implements IStudentRepository {
         Connection connection = null;
         try {
             connection = db.connect();
-            String sql = "SELECT id,first_name,last_name, age, floor, room FROM students";
+            String sql = "SELECT id_stud,first_name,last_name, age, floor, room FROM students";
             Statement st = connection.createStatement();
 
             ResultSet rs = st.executeQuery(sql);
             ArrayList<Student> students = new ArrayList<>();
             while (rs.next()) {
-                Student student = new Student(rs.getInt("id"),
+                Student student = new Student(rs.getInt("id_stud"),
                         rs.getString("first_name"),
                         rs.getString("last_name"),
                         rs.getInt("age"),

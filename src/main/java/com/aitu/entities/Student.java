@@ -11,22 +11,20 @@ public class Student extends Person {
     private int floor;
     private int room;
     private int id;
-    private static int id_gen = 1;
-    private static ArrayList<Integer> ids = new ArrayList<>();
     private Scanner sc = new Scanner(System.in);
 
     public Student(int id, String firstName, String lastName,
                    int age, int floor, int room) throws UserExistsException {
         super(firstName, lastName, age);
         setFloorRoom(floor, room);
-        setId(id_gen);
+        setId(id);
     }
 
     public Student(String firstName, String lastName,
                    int age, int floor, int room) throws UserExistsException {
         super(firstName, lastName, age);
         setFloorRoom(floor, room);
-        setId(id_gen);
+        setId(id);
     }
 
     public int getId() {
@@ -43,31 +41,12 @@ public class Student extends Person {
 
     public void setId(int id)
             throws UserExistsException {
-        if(studentExists(id)) {
-            throw new UserExistsException(getFirstName() + getLastName() + " id already exists");
-        } else {
-            ids.add(id);
-            this.id = id;
-            id_gen++;
-        }
-    }
-
-    public void removeId(){
-        ids.remove(Integer.valueOf(this.id));
+        this.id = id;
     }
 
     public void setFloorRoom(int floor, int room) {
         this.room = room;
         this.floor = floor;
-    }
-
-    private boolean studentExists(int id) {
-        for(int i: ids) {
-            if(i == id) {
-                return true;
-            }
-        }
-        return false;
     }
 
     @Override

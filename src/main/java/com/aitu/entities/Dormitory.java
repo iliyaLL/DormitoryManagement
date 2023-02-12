@@ -87,6 +87,5 @@ public class Dormitory implements Control {
     @Override
     public void removeStudent(Student student, Dormitory block) {
         studentRooms.remove(student);
-        student.removeId();
     }
 }

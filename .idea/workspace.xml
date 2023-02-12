@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d318e35f-810e-46b5-88db-b6fe7897c63d" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Authenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/IAuthenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/data/PostgresDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/data/PostgresDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Dormitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Dormitory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" afterDir="false" />
@@ -176,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675944134313</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit">
+      <created>1676217138187</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676217138187</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +212,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
+          <option name="timeStamp" value="11" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

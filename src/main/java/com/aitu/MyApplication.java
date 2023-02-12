@@ -21,6 +21,22 @@ public class MyApplication {
     }
 
     public void start() {
+
+        Authenticator authenticator = new Authenticator();
+
+        while (true) {
+            System.out.println("Please enter your login:");
+            String login = scanner.nextLine();
+            System.out.println("Please enter you password");
+            String password = scanner.nextLine();
+            if (authenticator.checkCredentials(login, password)) {
+                System.out.println("good!");
+                break;
+            } else {
+                System.out.println("Something goes wrong. Try again");
+            }
+        }
+
         while (true) {
             System.out.print("""
                                     
@@ -44,7 +60,7 @@ public class MyApplication {
                 } else if (option == 3) {
                     addStudentMenu();
                 } else if (option == 4) {
-//                    removeStudentMenu();
+                    removeStudentMenu();
                 } else {
                     System.out.println("terminating...");
                     return;
@@ -91,11 +107,11 @@ public class MyApplication {
         System.out.println(response);
     }
 
-//    public void removeStudentMenu() {
-//        System.out.println("Please enter id: ");
-//        int id = scanner.nextInt();
-//
-//        String response = controller.removeStudent(id);
-//        System.out.println(response);
-//    }
+    public void removeStudentMenu() {
+        System.out.println("Please enter id: ");
+        int id = scanner.nextInt();
+
+        String response = controller.removeStudent(id);
+        System.out.println(response);
+    }
 }
