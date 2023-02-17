@@ -47,7 +47,6 @@ public class Student extends Person {
         if (isCorrectRoom(floor, room)) {
             this.floor = floor;
             this.room = room;
-            System.out.println(String.format("floor: %d, room: %d", floor, room));
         }
         else {
             System.out.println("**!!!!!!!**");

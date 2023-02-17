@@ -20,6 +20,8 @@ public class StudentController {
 
         boolean added = repository.addStudent(student);
 
+        if (added) System.out.println(String.format("floor: %d, room: %d", floor, room));
+
         return (added ? "Student was added!" : "Student adding was failed!");
     }
 

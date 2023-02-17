@@ -11,7 +11,6 @@ public class MyApplication {
 
     private final Scanner scanner;
     private final StudentController controller;
-    private int blockNumber;
 
 
     public MyApplication(StudentController controller) {

@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d318e35f-810e-46b5-88db-b6fe7897c63d" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aitu/exceptions/AgeOutOfBoundsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Authenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/IAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/IAuthenticator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +122,7 @@
       <workItem from="1676351372475" duration="1281000" />
       <workItem from="1676360218877" duration="774000" />
       <workItem from="1676433258151" duration="6943000" />
+      <workItem from="1676632594363" duration="3113000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1674715508278</created>
@@ -198,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676222390931</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit">
+      <created>1676632651868</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676632651868</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
