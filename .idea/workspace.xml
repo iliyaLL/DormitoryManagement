@@ -9,7 +9,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/Authenticator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/MyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/controllers/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/IStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aitu/repositories/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +124,7 @@
       <workItem from="1676351372475" duration="1281000" />
       <workItem from="1676360218877" duration="774000" />
       <workItem from="1676433258151" duration="6943000" />
-      <workItem from="1676632594363" duration="3113000" />
+      <workItem from="1676632594363" duration="6097000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1674715508278</created>
@@ -201,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676632651868</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit">
+      <created>1676635995902</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676635995902</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commit">
+      <created>1676636037035</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676636037035</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

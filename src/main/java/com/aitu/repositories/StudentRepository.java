@@ -18,11 +18,11 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public boolean addStudent(Student student) {
+    public boolean addStudent(Student student, int id_bl) {
         Connection connection = null;
         try {
             connection = db.connect();
-            String sql = "INSERT INTO students(age, first_name, last_name, floor, room) VALUES (?,?,?,?,?)";
+            String sql = "INSERT INTO students(age, first_name, last_name, floor, room, id_bl) VALUES (?,?,?,?,?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setInt(1, student.getAge());
@@ -30,6 +30,7 @@ public class StudentRepository implements IStudentRepository {
             statement.setString(3, student.getLastName());
             statement.setInt(4, student.getFloor());
             statement.setInt(5, student.getRoom());
+            statement.setInt(6, id_bl);
 
             statement.execute();
             return true;
@@ -95,14 +96,15 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public Student getStudent(int id) {
+    public Student getStudent(int id, int id_bl) {
         Connection connection = null;
         try {
             connection = db.connect();
-            String sql = "SELECT id_stud,first_name,last_name,age,floor,room FROM students WHERE id_stud=?";
+            String sql = "SELECT id_stud,first_name,last_name,age,floor,room FROM students WHERE id_stud = ? AND id_bl = ?";
             PreparedStatement st = connection.prepareStatement(sql);
 
             st.setInt(1, id);
+            st.setInt(2, id_bl);
 
             ResultSet rs = st.executeQuery();
             if (rs.next()) {
@@ -134,11 +136,11 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public ArrayList<Student> getAllStudents() {
+    public ArrayList<Student> getAllStudents(int id_bl) {
         Connection connection = null;
         try {
             connection = db.connect();
-            String sql = "SELECT id_stud,first_name,last_name, age, floor, room FROM students";
+            String sql = String.format("SELECT id_stud,first_name,last_name, age, floor, room FROM students WHERE id_bl = %d", id_bl);
             Statement st = connection.createStatement();
 
             ResultSet rs = st.executeQuery(sql);

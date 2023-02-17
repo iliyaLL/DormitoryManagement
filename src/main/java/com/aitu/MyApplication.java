@@ -11,6 +11,7 @@ public class MyApplication {
 
     private final Scanner scanner;
     private final StudentController controller;
+    private int id_bl;
 
 
     public MyApplication(StudentController controller) {
@@ -29,6 +30,7 @@ public class MyApplication {
             String password = scanner.nextLine();
             if (authenticator.checkCredentials(login, password)) {
                 System.out.println("good!");
+                id_bl = login.charAt(5) - 48;
                 break;
             } else {
                 System.out.println("Something goes wrong. Try again");
@@ -77,7 +79,7 @@ public class MyApplication {
 
 
     public void getAllStudentsMenu() {
-        String response = controller.getAllStudents();
+        String response = controller.getAllStudents(id_bl);
         System.out.println(response);
     }
 
@@ -85,7 +87,7 @@ public class MyApplication {
         System.out.println("Please enter id");
 
         int id = scanner.nextInt();
-        String response = controller.getStudent(id);
+        String response = controller.getStudent(id, id_bl);
         System.out.println(response);
     }
 
@@ -101,7 +103,7 @@ public class MyApplication {
         System.out.println("Please enter the room");
         int room = scanner.nextInt();
 
-        String response = controller.addStudent(name, surname, age, floor, room);
+        String response = controller.addStudent(name, surname, age, floor, room, id_bl);
         System.out.println(response);
     }
 

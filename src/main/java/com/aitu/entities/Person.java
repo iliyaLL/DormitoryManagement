@@ -20,7 +20,7 @@ public abstract class Person {
             System.out.println(e.getMessage());
 
             while(true) {
-                System.out.print("another age: ");
+                System.out.print("Age is invalid! Another age: ");
                 int age2 = sc.nextInt();
                 if (isCorrectAge(age2)) {
                     setAge(age2);

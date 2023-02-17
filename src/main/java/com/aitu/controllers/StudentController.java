@@ -15,10 +15,10 @@ public class StudentController {
         this.repository = repository;
     }
 
-    public String addStudent (String name, String surname, int age, int floor, int room) throws UserExistsException, AgeOutOfBoundsException {
+    public String addStudent (String name, String surname, int age, int floor, int room, int id_bl) throws UserExistsException, AgeOutOfBoundsException {
         Student student = new Student(name, surname, age, floor, room);
 
-        boolean added = repository.addStudent(student);
+        boolean added = repository.addStudent(student, id_bl);
 
         if (added) System.out.println(String.format("floor: %d, room: %d", floor, room));
 
@@ -31,14 +31,14 @@ public class StudentController {
         return student == null ? "Student doesn't exist" : "Student was removed";
     }
 
-    public String getStudent (int id) {
-        Student student = repository.getStudent(id);
+    public String getStudent (int id, int id_bl) {
+        Student student = repository.getStudent(id, id_bl);
 
         return student == null ? "Student was not found" : student.toString();
     }
 
-    public String getAllStudents () {
-        ArrayList<Student> students = repository.getAllStudents();
+    public String getAllStudents (int id_bl) {
+        ArrayList<Student> students = repository.getAllStudents(id_bl);
         return students.toString();
     }
 }

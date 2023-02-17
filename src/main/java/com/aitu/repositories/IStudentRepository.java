@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public interface IStudentRepository {
 
-    boolean addStudent(Student student);
+    boolean addStudent(Student student, int id_bl);
     Student removeStudent(int id);
-    Student getStudent(int id);
-    ArrayList<Student> getAllStudents();
+    Student getStudent(int id, int id_bl);
+    ArrayList<Student> getAllStudents(int id_bl);
 }
