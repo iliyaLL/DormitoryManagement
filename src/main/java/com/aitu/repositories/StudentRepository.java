@@ -2,6 +2,7 @@ package com.aitu.repositories;
 
 import com.aitu.data.interfaces.IDB;
 import com.aitu.entities.Student;
+import com.aitu.exceptions.AgeOutOfBoundsException;
 import com.aitu.exceptions.UserExistsException;
 
 import java.sql.*;
@@ -81,6 +82,8 @@ public class StudentRepository implements IStudentRepository {
             e.printStackTrace();
         } catch (UserExistsException e) {
             System.out.println(e);;
+        } catch (AgeOutOfBoundsException e) {
+            throw new RuntimeException(e);
         } finally {
             try {
                 connection.close();
@@ -118,6 +121,8 @@ public class StudentRepository implements IStudentRepository {
             e.printStackTrace();
         } catch (UserExistsException e) {
             System.out.println(e);;
+        } catch (AgeOutOfBoundsException e) {
+            throw new RuntimeException(e);
         } finally {
             try {
                 connection.close();
@@ -155,6 +160,8 @@ public class StudentRepository implements IStudentRepository {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (UserExistsException e) {
+            throw new RuntimeException(e);
+        } catch (AgeOutOfBoundsException e) {
             throw new RuntimeException(e);
         } finally {
             try {

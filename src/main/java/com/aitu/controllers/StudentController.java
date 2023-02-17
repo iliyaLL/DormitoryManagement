@@ -1,6 +1,7 @@
 package com.aitu.controllers;
 
 import com.aitu.entities.Student;
+import com.aitu.exceptions.AgeOutOfBoundsException;
 import com.aitu.exceptions.UserExistsException;
 import com.aitu.repositories.IStudentRepository;
 
@@ -14,7 +15,7 @@ public class StudentController {
         this.repository = repository;
     }
 
-    public String addStudent (String name, String surname, int age, int floor, int room) throws UserExistsException {
+    public String addStudent (String name, String surname, int age, int floor, int room) throws UserExistsException, AgeOutOfBoundsException {
         Student student = new Student(name, surname, age, floor, room);
 
         boolean added = repository.addStudent(student);

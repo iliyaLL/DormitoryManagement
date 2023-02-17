@@ -2,6 +2,7 @@ package com.aitu;
 
 import com.aitu.controllers.StudentController;
 import com.aitu.entities.Dormitory;
+import com.aitu.exceptions.AgeOutOfBoundsException;
 import com.aitu.exceptions.UserExistsException;
 
 import java.util.*;
@@ -10,9 +11,7 @@ public class MyApplication {
 
     private final Scanner scanner;
     private final StudentController controller;
-    private Dormitory blockOne = new Dormitory();
-    private Dormitory blockTwo = new Dormitory();
-    private Dormitory blockThree = new Dormitory();
+    private int blockNumber;
 
 
     public MyApplication(StudentController controller) {
@@ -42,7 +41,7 @@ public class MyApplication {
                                     
                     Welcome to the Dormitory Management Application!
                     Please select an option:
-                    1. Retrieve students by block
+                    1. Retrieve all students
                     2. Retrieve student by ID
                     3. Add student
                     4. Remove student
@@ -91,7 +90,7 @@ public class MyApplication {
         System.out.println(response);
     }
 
-    public void addStudentMenu() throws UserExistsException {
+    public void addStudentMenu() throws UserExistsException, AgeOutOfBoundsException {
         System.out.println("Please enter the name");
         String name = scanner.next();
         System.out.println("Please enter the surname");

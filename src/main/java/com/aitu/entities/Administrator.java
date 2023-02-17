@@ -1,10 +1,11 @@
 package com.aitu.entities;
 
+import com.aitu.exceptions.AgeOutOfBoundsException;
 import com.aitu.interfaces.Control;
 
 public class Administrator extends Person implements Control {
 
-    public Administrator(String firstName, String lastName, int age) {
+    public Administrator(String firstName, String lastName, int age) throws AgeOutOfBoundsException {
         super(firstName, lastName, age);
     }
 

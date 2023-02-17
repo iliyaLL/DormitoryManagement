@@ -1,15 +1,17 @@
 package com.aitu;
 
-public class Authenticator implements IAuthenticator{
+import java.util.Objects;
 
-    private String[] admin1 = { "admin1", "blockone"};
-    private String[] admin2 = { "admin2", "blocktwo"};
-    private String[] admin3 = { "admin3", "blockthree"};
+public class Authenticator implements IAuthenticator {
 
-    public boolean checkCredentials(String username, String password) {
-        if (admin1[0].equals(username) && admin1[1].equals(password)) return true;
-        else if (admin2[0].equals(username) && admin2[1].equals(password)) return true;
-        else if (admin3[0].equals(username) && admin3[1].equals(password)) return true;
-        else return false;
+    private String[] log = {"admin1", "admin2", "admin3"};
+    private String[] pass = {"blockone", "blocktwo", "blockthree"};
+
+    public boolean checkCredentials(String login, String password) {
+        for (int i = 0; i < 3; i++) {
+            if (log[i].equals(login) && pass[i].equals(password)) return true;
+        }
+        return false;
     }
+
 }
