@@ -22,7 +22,7 @@ public class StudentRepository implements IStudentRepository {
         Connection connection = null;
         try {
             connection = db.connect();
-            String sql = "INSERT INTO students(age, first_name, last_name, floor, room, id_bl) VALUES (?,?,?,?,?,)";
+            String sql = "INSERT INTO students(age, first_name, last_name, floor, room) VALUES (?,?,?,?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setInt(1, student.getAge());
